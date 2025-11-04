@@ -8,3 +8,20 @@ header, footer {
     padding: 10px;
     margin: 0;
 }
+
+#intro {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#attribute {
+    display: inline;
+    color: blue;
+    font-weight: 1000;
+}
+
+/* #attribute:hover { */
+    /* font-size: 50px; */
+    /* transition: 3s; */
+/* } */

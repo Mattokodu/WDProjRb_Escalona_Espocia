@@ -5,3 +5,4 @@
 
 **Outline of the website**:
 
+**Planning in JS**:
