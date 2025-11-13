@@ -9,6 +9,13 @@ header, footer {
     margin: 0;
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 #intro {
     align-items: center;
     justify-content: center;
