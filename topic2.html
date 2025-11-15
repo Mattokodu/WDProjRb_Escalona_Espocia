@@ -6,8 +6,27 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
   </script>
 </head>
-<body>
-    We can use mathematics to model what happens to populations over time. An easy model Suppose we have x_n as the proportion of a species in the nth year out of the carrying capacity of its habitat.
-    So, x_n can range from 0 to 1. A sim
+<body class="contents">
+    We can use mathematics to model what happens to populations over time. 
+    An easy model is suppose we have \( x_n \) as the proportion of a species in the nth year out of the carrying capacity of its habitat.
+    An easy simulation is that the population grows at a constant rate per year. So,
+    \[ x_n = r x_{n-1}. \]
+    However, this is not realistic as there is a carrying capacity. This is because while organisms grow
+    exponentially, the resources only grow by a constant difference per year. This limits the population.
+    A more accurate model is restricting \( x_n \), showing the proportion of the population compared to
+    the carrying capacity. We can add a factor that 
+    \[ x_n = rx_{n-1}(1-x_{n-1}) \]
+
+
+    <footer>
+      <nav>
+          <ul>
+              <li><a href="index.html">Home Page</a></li>
+              <li><a href="topic2.html">Mathematical Modelling of Evolution</a></li>
+              <li><a href="topic3.html">Topic 3</a></li>
+              <li><a href="topic4.html">Topic 4</a></li>
+          </ul>
+      </nav>
+  </footer>
 </body>
 </html>
