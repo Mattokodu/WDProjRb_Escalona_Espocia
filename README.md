@@ -13,11 +13,10 @@ This website explores human evolution in a fun and engaging way for elementary s
 
 We will have individual web pages for each lesson:
 
-- Unifying Themes of Biology
-- History of Evolution
-- Darwin's Theory of Evolution
-- Evidence of Evolution
-- Mechanisms of Evolution
+- Topic 1: Unifying Themes of Biology
+- Topic 2: Darwin's Theory of Evolution
+- Topic 3: Evidence and Mechanisms of Evolution
+- Topic 4: Microevolution and Macroevolution
 
 ## More Advanced Lessons
 
