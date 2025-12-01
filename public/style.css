@@ -11,6 +11,9 @@ header, footer {
 footer {
     min-height: 80px;
     width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 #intro {
