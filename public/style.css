@@ -26,6 +26,15 @@ footer {
     font-weight: 1000;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 218)
+}
+
+a:hover {
+  font-weight: bold;
+}
+
 .contents {
     margin: 40px;
 }
