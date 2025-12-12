@@ -15,8 +15,14 @@ We will have individual web pages for each lesson:
 
 - Topic 1: Unifying Themes of Biology
 - Topic 2: Darwin's Theory of Evolution
-- Topic 3: Evidence and Mechanisms of Evolution
-- Topic 4: Microevolution and Macroevolution
+- Topic 3: Macroevolution
+- Topic 4: Microevolution
+
+## Wireframes
+
+![Home Page](assets/index-page.png)
+![Lesson Layout 1](assets\lesson-page1.png)
+![Lesson Layout 2](assets\lesson-page2.png)
 
 ## More Advanced Lessons
 
