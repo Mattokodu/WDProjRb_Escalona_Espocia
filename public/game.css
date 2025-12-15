@@ -1,0 +1,23 @@
+.population {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.individual {
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border-radius: 50%;
+}
+
+.A {
+  background-color: #1772cd; /* allele A */
+}
+
+.a {
+  background-color: #fd8506; /* allele a */
+}

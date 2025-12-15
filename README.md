@@ -21,8 +21,10 @@ We will have individual web pages for each lesson:
 ## Wireframes
 
 ![Home Page](assets/index-page.png)
-![Lesson Layout 1](assets\lesson-page1.png)
-![Lesson Layout 2](assets\lesson-page2.png)
+
+![Lesson Layout 1](assets/lesson-page1.png)
+
+![Lesson Layout 2](assets/lesson-page2.png)
 
 ## More Advanced Lessons
 

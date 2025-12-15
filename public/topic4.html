@@ -3,6 +3,7 @@
 <head>
   <title>Name of Website</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="game.css">
   <link rel="icon" type="image/x-icon" href="assets/favicon.png">
 </head>
 <body>
@@ -85,8 +86,46 @@
     </li>
   </ul>
 
+    Consider this following <i>oversimplified</i> simulation. Try testing with varying population sizes and initial distribution of alleles. <br><br>
+
+    <label>
+      Population Size:
+        <select id="populationSize">
+          <option value="10">Small (10)</option>
+          <option value="50">Medium (50)</option>
+          <option value="200">Large (200)</option>
+          <option value="1000">Very Large (1000)</option>
+        </select>
+      </label>
+
+      <br>
+      <label>
+      Initial Distribution of Allele A:
+        <select id="allele-distrib">
+          <option value="0.1">Least (0.1)</option>
+          <option value="0.3">Less (0.3)</option>
+          <option value="0.5">Average (0.5)</option>
+        </select>
+      </label>
+      <br>
+
+
+      <button id="nextGen">Next Generation</button>
+      <button id="reset">Reset</button>
+
+      <p id="generation">Generation: 0</p>
+
+      <div class="population" id="population"></div>
+      <div class="population" id="population2"></div>
+
+      <p id="frequencies"></p>
+
+      <script src="game.js"></script>
+
     </figure>
   </div>
+
+  
 
    <footer>
       <nav>
