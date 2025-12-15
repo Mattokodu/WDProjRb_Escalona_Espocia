@@ -7,23 +7,23 @@ const frequenciesText = document.getElementById("frequencies");
 const frequenciesText2 = document.getElementById("frequencies2");
 
 function createInitialPopulation(size, prob) {
-  population = [];
-  generation = 0;
+  pop = [];
+  gen = 0;
 
   for (let i = 0; i < size; i++) {
-    population.push(Math.random() < prob ? "A" : "a");
+    pop.push(Math.random() < prob ? "A" : "a");
   }
 
   updateDisplay();
 }
 
 function nextGeneration() {
-  let size = population.length;
+  let size = pop.length;
   let newpop = [];
 
   for (let i = 0; i < size; i++) {
-    let randomParent1 = population[Math.floor(Math.random() * size)];
-    let randomParent2 = population[Math.floor(Math.random() * size)];
+    let randomParent1 = pop[Math.floor(Math.random() * size)];
+    let randomParent2 = pop[Math.floor(Math.random() * size)];
     let randomParent = '';
     if (randomParent1 == "a" && randomParent2 == "a") {
         randomParent = "a";
@@ -34,8 +34,8 @@ function nextGeneration() {
     newpop.push(randomParent);
   }
 
-  population = newpop;
-  generation++;
+  pop = newpop;
+  gen++;
   updateDisplay();
 }
 
@@ -44,7 +44,7 @@ function updateDisplay() {
 
   let countA = 0;
 
-  population.forEach(allele => {
+  pop.forEach(allele => {
     const div = document.createElement("div");
     div.classList.add("individual", allele);
     populationDiv.appendChild(div);
@@ -52,10 +52,10 @@ function updateDisplay() {
     if (allele === "A") { countA++; }
   });
 
-  const frequA = (countA / population.length).toFixed(2);
+  const frequA = (countA / pop.length).toFixed(2);
   const frequa = (1 - frequA).toFixed(2);
 
-  generationText.textContent = `Generation: ${generation}`;
+  generationText.textContent = `Generation: ${gen}`;
   frequenciesText.textContent =
     `Allele A distribution: ${frequA} | Allele a distribution: ${frequa}`;
 
