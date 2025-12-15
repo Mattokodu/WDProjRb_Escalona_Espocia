@@ -33,39 +33,37 @@
     #image {
         margin-left: 25%; 
     }
+    .site-header {
+      background-color: #1f2933;
+      padding: 12px 24px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 50px;
+      height: auto;
+    }
+
+    .site-title {
+      color: white;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
   </style>
 </head>
 <body>
-    <header>
-        <div style="font-size: 50px">
-            Evolution Visualized
-        </div>
-        <div id="image">
-            <img src="assets/favicon.png" width="100px">
-        </div>
+    <header class="site-header">
+      <div class="header-content">
+        <img src="..\assets/favicon.png" width=75px alt="Favicon" class="logo">
+        <h1 class="site-title">Evolution Visualized</h1>
+      </div>
     </header>
-
-    <div class="row">
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  
-</div>
 
     <div id="intro" style="font-size: 20px">
         Welcome to our Human Evolution page! Here, young 

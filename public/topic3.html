@@ -58,7 +58,6 @@ It helps scientists understand the <b>big picture</b>&nbsp;of how life on Earth 
     </li>
 
     <li>
-        <img src="..\assets\mass-extinction.png" width="30%">
         <b>Mass Extinctions</b><br />
         Large-scale events that wipe out many species at once, opening opportunities for new groups to evolve.<br />
         <i>e.g. Dinosaur extinction leading to the rise of mammals.</i>
@@ -104,8 +103,42 @@ It helps scientists understand the <b>big picture</b>&nbsp;of how life on Earth 
     </ul>
     </div>
 
-<div><br /></div>
-<p></p>
+    <div class="card" onclick="openCard()">
+        <img src="..\assets/mass-extinction.png" alt="Australopithecus">
+        <h3>Examples of Macroevolutionary Processes</h3>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="card-details">
+            <button class="close" onclick="closeCard()">✕</button>
+
+            <h2>Phylogenetic Trees</h2>
+            <p>
+            
+            </p>
+        </div>
+    </div>
+
+     <br>
+
+
+    <div class="card" onclick="openCard()">
+        <img src="..\assets/phylo.png" alt="Australopithecus">
+        <h3>Phylogenetic Trees</h3>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="card-details">
+            <button class="close" onclick="closeCard()">✕</button>
+
+            <h2>Phylogenetic Trees</h2>
+            <p>
+            A main diagram used to visualize macroevolution is <b>phylogenetic trees.</b> They include a main common ancestor,
+            then there are branches signifying that organisms have split into two different ones by speciation. 
+            </p>
+        </div>
+    </div>
+
 
     </figure>
   </div>
@@ -123,5 +156,24 @@ It helps scientists understand the <b>big picture</b>&nbsp;of how life on Earth 
   </footer>
 
   <script src="script.js"></script>
+
+  <script>
+    const data = {
+    "Australopithecus": "Lived 4–2 million years ago. Early bipedal hominin.",
+    "Homo habilis": "Known as the 'handy man'. First clear stone tools.",
+    "Homo erectus": "First hominin to leave Africa and use fire."
+    };
+
+    function openCard(name) {
+    document.getElementById("title").textContent = name;
+    document.getElementById("info").textContent = data[name];
+    document.getElementById("overlay").style.display = "flex";
+    }
+
+    function closeCard() {
+    document.getElementById("overlay").style.display = "none";
+    }
+    </script>
+
 </body>
 </html>
