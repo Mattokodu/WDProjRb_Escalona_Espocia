@@ -4,6 +4,16 @@
   <title>RB09 - ESPOCIA PORTFOLIO (website dumps)</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  <style>
+    figure {
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+    }
+  </style>
 </head>
 <body>
 
@@ -36,14 +46,61 @@ Macroevolution looks at evolution <b>above the species level</b>, focusing on:
 <div>
 It helps scientists understand the <b>big picture</b>&nbsp;of how life on Earth has transformed.
 </div>
+<br>
 </div>
 
-<div><br /></div>
 
-<div><b>Examples of Macroevolutionary Processes</b></div>
+    <div class="card-grid">
+  <div class="card" onclick="openCard('Examples')">
+    <img src="..\assets/mass-extinction.png" alt="examples" id="cardimg">
+    <h3>Examples of Macroevolutionary Processes</h3>
+  </div>
+  <br>
 
-<div>
-<ol style="text-align: left;">
+  <div class="card" onclick="openCard('Evidence')">
+    <img src="..\assets/fossils.png" alt="evidence" id="cardimg">
+    <h3>Evidence of Macroevolution</h3>
+  </div>
+  <br>
+
+  <div class="card" onclick="openCard('Phylogenetic Trees')">
+    <img src="..\assets/phylo.png" alt="phylo" id="cardimg">
+    <h3>Phylogenetic Trees</h3>
+  </div>
+</div>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay">
+  <div class="card-details">
+    <button class="close" onclick="closeCard()">✕</button>
+    <h2 id="title"></h2>
+    <div id="content"></div>
+
+  </div>
+</div>
+
+
+
+    </figure>
+  </div>
+
+  <footer>
+      <nav>
+          <ul>
+              <li><a href="../index.html">Home Page</a></li>
+              <li><a href="topic1.html">Unifying Themes of Biology</a></li>
+              <li><a href="topic2.html">Theories on Evolution</a></li>
+              <li><a href="topic3.html">Macroevolution</a></li>
+              <li><a href="topic4.html">Microevolution</a></li>
+          </ul>
+      </nav>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    const data = {
+    "Examples": `<ol style="text-align: left;">
     <li>
         <b>Speciation</b><br />
         The formation of new species when populations become genetically different enough 
@@ -73,14 +130,8 @@ It helps scientists understand the <b>big picture</b>&nbsp;of how life on Earth 
         <b>Evolution of Novel Structures</b><br />
         Development of new features like wings, limbs, or flowers.
     </li>
-</ol>
-</div>
-
-<div><b>Evidence of Macroevolution</b></div>
-<div><b><br /></b></div>
-
-<div>
-<ul style="text-align: left;">
+</ol>`,
+    "Evidence": `<ol style="text-align: left;">
     <li>
         <b>Fossil Record</b><br />
         Shows gradual changes and the appearance/extinction of species over time.
@@ -100,79 +151,22 @@ It helps scientists understand the <b>big picture</b>&nbsp;of how life on Earth 
         <b>Biogeography</b><br />
         Species distribution patterns provide clues about how they evolved.
     </li>
-    </ul>
-    </div>
-
-    <div class="card" onclick="openCard()">
-        <img src="..\assets/mass-extinction.png" alt="Australopithecus">
-        <h3>Examples of Macroevolutionary Processes</h3>
-    </div>
-
-    <div class="overlay" id="overlay">
-        <div class="card-details">
-            <button class="close" onclick="closeCard()">✕</button>
-
-            <h2>Phylogenetic Trees</h2>
-            <p>
-            
-            </p>
-        </div>
-    </div>
-
-     <br>
-
-
-    <div class="card" onclick="openCard()">
-        <img src="..\assets/phylo.png" alt="Australopithecus">
-        <h3>Phylogenetic Trees</h3>
-    </div>
-
-    <div class="overlay" id="overlay">
-        <div class="card-details">
-            <button class="close" onclick="closeCard()">✕</button>
-
-            <h2>Phylogenetic Trees</h2>
-            <p>
-            A main diagram used to visualize macroevolution is <b>phylogenetic trees.</b> They include a main common ancestor,
-            then there are branches signifying that organisms have split into two different ones by speciation. 
-            </p>
-        </div>
-    </div>
-
-
-    </figure>
-  </div>
-
-  <footer>
-      <nav>
-          <ul>
-              <li><a href="../index.html">Home Page</a></li>
-              <li><a href="topic1.html">Unifying Themes of Biology</a></li>
-              <li><a href="topic2.html">Theories on Evolution</a></li>
-              <li><a href="topic3.html">Macroevolution</a></li>
-              <li><a href="topic4.html">Microevolution</a></li>
-          </ul>
-      </nav>
-  </footer>
-
-  <script src="script.js"></script>
-
-  <script>
-    const data = {
-    "Australopithecus": "Lived 4–2 million years ago. Early bipedal hominin.",
-    "Homo habilis": "Known as the 'handy man'. First clear stone tools.",
-    "Homo erectus": "First hominin to leave Africa and use fire."
+    </ol>`,
+    "Phylogenetic Trees": 
+    `These are the main diagrams used by biologists when talking about macroevolution.
+    These consist of an`
     };
 
     function openCard(name) {
     document.getElementById("title").textContent = name;
-    document.getElementById("info").textContent = data[name];
+    document.getElementById("content").innerHTML = data[name];
     document.getElementById("overlay").style.display = "flex";
     }
 
     function closeCard() {
     document.getElementById("overlay").style.display = "none";
     }
+
     </script>
 
 </body>
