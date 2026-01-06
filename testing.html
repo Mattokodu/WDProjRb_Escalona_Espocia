@@ -120,10 +120,52 @@
         </a>
     </footer>
 
-    <form>
-        <label>Email:<input type="email" required></label>
-    </form>
-
+    
+<div class="card">
+    <div class="card-content">
+      <div class="image-box">Image Box</div>
+      <p>This card adapts to its container width.</p>
+    </div>
+  </div>
+  
+  <style>
+    /* Declare the card as a container */
+    .card {
+      container-type: inline-size;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      background: #f9f9f9;
+    }
+  
+    /* Default stacked layout */
+    .card-content {
+      display: block;
+    }
+    .image-box {
+      background: #457b9d;
+      color: white;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  
+    /* Container query: switch to side-by-side when wide enough */
+    @container (min-width: 400px) {
+      .card-content {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+      .image-box {
+        flex: 0 0 200px;
+        margin-bottom: 0;
+      }
+    }
+  </style>
+  
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 
