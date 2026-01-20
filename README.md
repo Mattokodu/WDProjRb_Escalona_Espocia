@@ -1,10 +1,10 @@
 # Q3 Proposal Update
 
-## (Final Title)
+## Evolution Visualized (NOT FINAL IDK BTUH)
 
 ## Features (minimum: 3)
 * works for both phones and laptops
-* something else
+* 
 * something else
 
 ## Details (project specific)
@@ -17,6 +17,10 @@
 
 (How do we know if you are done?)
 
-HELP GUYS (we shouldve doen thermodynamics honestly ideal gas models and gives an excuse for me to learn thermo)
+HELP GUYS
+
+## Wireframes
+
+
 
 this is so

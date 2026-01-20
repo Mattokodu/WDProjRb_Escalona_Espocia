@@ -3,6 +3,12 @@ body {
     background-color: #ddd;   
 }
 
+@media (min-width: 768px) {
+            .container { flex-direction: row;  }
+            body {background: lavender;}
+}
+
+
 header, footer {
     background-color: #c8c8c8;
     padding: 10px;
