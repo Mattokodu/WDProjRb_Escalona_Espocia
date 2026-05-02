@@ -4,14 +4,6 @@ body {
     min-height: 100vh;  
 }
 
-.form input, .form textarea {
-    display: block;
-    margin: 10px 0;
-    padding: 8px;
-    width: 100%;
-    max-width: 400px;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -110,6 +102,9 @@ figure {
   cursor: pointer;
 }
 
+.form label {
+  font-weight: bold;
+}
 
 /* #attribute:hover { */
     /* font-size: 50px; */
