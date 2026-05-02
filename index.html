@@ -191,11 +191,11 @@
       function deleteSuggestion(index) {
         let confirmDelete = confirm("Are you sure you want to delete this?");
         if (confirmDelete) {
-            let albums = JSON.parse(localStorage.getItem("albums") || "[]");
-            albums.splice(index, 1);
+            let suggest = JSON.parse(localStorage.getItem("suggestion") || "[]");
+            suggest.splice(index-1, 1);
+            localStorage.setItem("suggestion", JSON.stringify(suggest));
             displaySuggestions();
         }
-        // FIX THIS FIX THIS FIX THIS FIX THIS FIX THIS FIX THIS FIX THIS FIX THIS FIX THIS FIX THIS FIX THIS FIX THIS FIX THIS FIX THIS FIX THIS FIX THIS
       }
 
       function displaySuggestions() {
