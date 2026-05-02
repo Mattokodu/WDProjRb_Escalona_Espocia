@@ -14,7 +14,6 @@ let hueValue = 0;
 
 function setup() {
   createCanvas(700, 400);
-  colorMode(HSB, 255);
   cols = width/size;
   rows = height/size; 
   
