@@ -2,11 +2,20 @@
 <html>
 <head>
   <title>Topic 4 - Microevolution</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Describe the content of this website">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Mateo Espocia">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="game.css">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  <link rel="icon" type="image/x-icon" href=".././assets/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    body {
+      background-color:rgb(231, 210, 236)
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -16,9 +25,9 @@
       </div>
   </header>
 
-  <div>
+  <div class="container">
     <figure>
-      <h1>Microevolution</h1>
+      <h1 class="mt-4">Microevolution</h1>
 
   <h2>What is Microevolution?</h2>
   <p>
@@ -137,16 +146,18 @@ Random chance events can remove alleles from the population, reducing genetic di
     </figure>
   </div>
 
-   <footer>
-      <nav>
-          <ul>
-              <li><a href="../index.html">Home Page</a></li>
-              <li><a href="topic1.html">Unifying Themes of Biology</a></li>
-              <li><a href="topic2.html">Theories on Evolution</a></li>
-              <li><a href="topic3.html">Macroevolution</a></li>
-              <li><a href="topic4.html">Microevolution</a></li>
-          </ul>
-      </nav>
-  </footer>
+   <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home Page</a></li>
+        <li class="nav-item"><a href="topic1.html" class="nav-link px-2 text-body-secondary">Unifying Themes of Biology</a>
+        </li>
+        <li class="nav-item"><a href="topic2.html" class="nav-link px-2 text-body-secondary">Theories on Evolution</a></li>
+        <li class="nav-item"><a href="topic3.html" class="nav-link px-2 text-body-secondary">Macroevolution</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy; 2026 ESCALONA, Maxxi; ESPOCIA, Mateo All rights reserved.</p>
+    </footer>
+  </div>
+
 </body>
 </html>

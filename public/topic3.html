@@ -2,18 +2,18 @@
 <html>
 <head>
   <title>Topic 3 - Macroevolution</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Describe the content of this website">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Mateo Espocia">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  <link rel="icon" type="image/x-icon" href=".././assets/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <style>
-    figure {
-        -moz-column-count: 2;
-        -moz-column-gap: 5px;
-        -webkit-column-count: 2;
-        -webkit-column-gap: 5px;
-        column-count: 2;
-        column-gap: 5px;
+    body {
+      background-color:rgb(225, 229, 204)
     }
   </style>
 </head>
@@ -21,12 +21,12 @@
 
     <header class="site-header">
       <div class="header-content">
-        <img src="assets/favicon.png" alt="Favicon" class="logo">
+        <img src="../assets/favicon.png" alt="Favicon" class="logo">
         <h1 class="site-title">Evolution Visualized</h1>
       </div>
     </header>
 
-  <div>
+  <div class="container">
     <figure>
       
 
@@ -61,19 +61,19 @@
 
     <div class="card-grid">
         <div class="card" onclick="openCard('Examples')">
-            <img src="..\assets/mass-extinction.png" alt="examples" id="cardimg">
+            <img src="../assets/mass-extinction.png" alt="examples" id="cardimg">
             <h3>Examples of Macroevolutionary Processes</h3>
         </div>
         
 
         <div class="card" onclick="openCard('Evidence')">
-            <img src="..\assets/fossils.png" alt="evidence" id="cardimg">
+            <img src="../assets/fossils.png" alt="evidence" id="cardimg">
             <h3>Evidence of Macroevolution</h3>
         </div>
         
 
         <div class="card" onclick="openCard('Phylogenetic Trees')">
-            <img src="..\assets/phylo.png" alt="phylo" id="cardimg">
+            <img src="../assets/phylo.png" alt="phylo" id="cardimg">
             <h3>Phylogenetic Trees</h3>
         </div>
     </div>
@@ -93,17 +93,18 @@
     </figure>
   </div>
 
-  <footer>
-      <nav>
-          <ul>
-              <li><a href="../index.html">Home Page</a></li>
-              <li><a href="topic1.html">Unifying Themes of Biology</a></li>
-              <li><a href="topic2.html">Theories on Evolution</a></li>
-              <li><a href="topic3.html">Macroevolution</a></li>
-              <li><a href="topic4.html">Microevolution</a></li>
-          </ul>
-      </nav>
-  </footer>
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home Page</a></li>
+        <li class="nav-item"><a href="topic1.html" class="nav-link px-2 text-body-secondary">Themes on Biology</a>
+        </li>
+        <li class="nav-item"><a href="topic2.html" class="nav-link px-2 text-body-secondary">Theories on Evolution</a></li>
+        <li class="nav-item"><a href="topic4.html" class="nav-link px-2 text-body-secondary">Microevolution</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy; 2026 ESCALONA, Maxxi; ESPOCIA, Mateo All rights reserved.</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 
