@@ -1,134 +1,210 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Topic 1 - Unifying Themes of Biology </title>
-  <link rel="stylesheet" href="style.css">  
-  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Describe the content of this website">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Mateo Espocia">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href=".././assets/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
-    
   <header class="site-header">
-      <div class="header-content">
-        <img src=".././assets/favicon.png" alt="Favicon" class="logo">
-        <h1 class="site-title">Evolution Visualized</h1>
-      </div>
-    </header>
+    <div class="header-content">
+      <img src=".././assets/favicon.png" alt="Favicon" class="logo">
+      <h1 class="site-title">Evolution Visualized</h1>
+    </div>
+  </header>
 
-  <div>
+  <div class="container">
 
-  <figure>
-    <h1>Unifying Themes of Biology</h1>
+    <!-- <figure> -->
+    <h1 class="mt-4">Unifying Themes of Biology</h1>
+    <figure>
+      <img class="img-fluid rounded" width="600" src=".././assets/biology.jpg"
+        alt="A wooden block spelling the word biology on a table photo – Free Green Image on Unsplash">
+      <!-- Add this in your references to credit the creator https://unsplash.com/photos/a-wooden-block-spelling-the-word-biology-on-a-table-gz7s5Z9Furk -->
+      <figcaption>
+        Biology is the science that studies life & living organisms.
+        It includes how organisms interact with each other and how
+        the inner systems of organisms work.
+      </figcaption>
+    </figure>
 
-    Biology is the science that studies life & living organisms. 
-    It includes how organisms interact with each other and how
-    the inner systems of organisms work.
-    <br><br>
+    <h2>Properties of Life</h2>
+    <p>Characteristics shared by living things. There are seven of them, which are the following:</p>
+    <!-- <ol class="list-group list-group-numbered">
+        <li class="list-group-item"> <b>Order: </b> An organized structure </li>There is another thing
+        <li class="list-group-item"> <b>Evolutionary adaptation</b> Traits the improve; survival becomes more common.
+        </li>
+        <li class="list-group-item"> <b>Regulation or Homeostasis:</b> The ability to maintain stable internal
+          conditions</li>
+        <li class="list-group-item"> <b>Energy Processing: </b> Using energy for activities Homeostasis - the ability to
+          maintain stable internal conditions</li>
+        <li class="list-group-item"> <b>Growth and Development: </b> Organisms growing and following genetic
+          instructions </li>
+        <li class="list-group-item"> <b>Response to Environment: </b> Responding to stimuli</li>
+        <li class="list-group-item"> <b>Reproduction: </b> The production of offspring</li>
+      </ol> -->
 
-    <b>Properties of Life:</b>
-	Characteristics shared by living things. There are seven of them, which are the following:
-  <ol>
-    <li> <b>Order: </b> An organized structure </li> 
-    There is another thing 
-    <li> <b>Evolutionary adaptation</b> Traits the improve; survival becomes more common. </li>
-    <li> <b>Regulation or Homeostasis:</b> The ability to maintain stable internal conditions
-</li>
-    <li> <b>Energy Processing: </b> Using energy for activities
- Homeostasis - the ability to maintain stable internal conditions
-</li>
-    <li> <b>Growth and Development: </b> Organisms growing and following genetic instructions </li>
-    <li> <b>Response to Environment: </b> Responding to stimuli</li>
-    <li> <b>Reproduction: </b> The production of offspring</li>
-  </ol>
+    <ol class="list-group list-group-numbered mb-2">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Order</div>
+          An organized structure
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Evolutionary adaptation</div>
+          Traits the improve; survival becomes more common.
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Regulation or Homeostasis</div>
+          The ability to maintain stable internal conditions
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Energy Processing</div>
+          Using energy for activities Homeostasis - the ability to maintain stable internal conditions
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Growth and Development</div>
+          Organisms growing and following genetic instructions
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Response to Environment</div>
+          Responding to stimuli
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Reproduction</div>
+          The production of offspring
+        </div>
+      </li>
+    </ol>
+
+    <p>Despite this, many still argue about whether certain things
+      are considered <i>living</i>. For example, consider whether fire is living.
+      You would most likely say it is not living, right? However, if we check
+      it using the characteristics of life,</p>
+
+    <h2>The Cell is the Basic Unit of Life</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">All living things are made out of cells</li>
+      <li class="list-group-item">Cells carry out the basic functions of life
+        <ul>
+          <li>Ex. growth, energy use, reproduction</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Structure and Function are Related</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">The way something is shaped helps determine what it can do
+        <ul>
+          <li>Ex. Bird wings are shaped for flight; Red blood cells are shaped to carry oxygen</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Life Uses Energy</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">All organisms need energy to survive</li>
+      <li class="list-group-item">Plants get energy from the sun; Animals get energy from food</li>
+    </ul>
+
+    <h2>Homeostasis</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">Living things keep stable internal conditions even when the environment changes
+        <ul>
+          <li>Ex. Shivering and sweating</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Growth, Development, and Reproduction</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">Organisms grow and change over time.</li>
+      <li class="list-group-item">They reproduce to create new life and continue on their species</li>
+    </ul>
+
+    <h2>Evolution</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">Populations change over long periods because of natural selection.</li>
+      <li class="list-group-item">Evolution explains the diversity of life on Earth.</li>
+    </ul>
+
+    <h2>Unity and Diversity</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">All living things share common features (like DNA).</li>
+      <li class="list-group-item">But they are also diverse due to evolution and adaptation.</li>
+    </ul>
+
+    <h2>Interdependence of Organisms</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">Living things depend on each other and their environment.</li>
+      <li class="list-group-item">Example: plants produce oxygen that animals breathe.</li>
+    </ul>
+
+    <h2>Biological Systems</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">Life is organized into systems—molecules → cells → tissues → organs → organisms →
+        ecosystems.</li>
+      <li class="list-group-item">Each level works together to support life.</li>
+    </ul>
 
 
-  Despite this, many still argue about whether certain things 
-  are considered <i>living</i>. For example, consider whether fire is living.
-  You would most likely say it is not living, right? However, if we check
-  it using the characteristics of life,
-
-  <br>
-
-  <p><b>The Cell is the Basic Unit of Life</b></p>
-<ul>
-  <li>All living things are made out of cells</li>
-  <li>Cells carry out the basic functions of life</li>
-  <ul>
-    <li>Ex. growth, energy use, reproduction</li>
-  </ul>
-</ul>
-
-<p><b>Structure and Function are Related</b></p>
-<ul>
-  <li>The way something is shaped helps determine what it can do</li>
-  <ul>
-    <li>Ex. Bird wings are shaped for flight; Red blood cells are shaped to carry oxygen</li>
-  </ul>
-</ul>
-<b>Life Uses Energy</b></p>
-<ul>
-  <li>All organisms need energy to survive</li>
-  <li>Plants get energy from the sun; Animals get energy from food</li>
-</ul>
-
-<p><b>Homeostasis</b></p>
-<ul>
-  <li>Living things keep stable internal conditions even when the environment changes</li>
-  <ul>
-    <li>Ex. Shivering and sweating</li>
-  </ul>
-</ul>
-
-<p><b>Growth, Development, and Reproduction</b></p>
-<ul>
-  <li>Organisms grow and change over time.</li>
-  <li>They reproduce to create new life and continue on their species</li>
-</ul>
-
-<p><b>Evolution</b></p>
-<ul>
-  <li>Populations change over long periods because of natural selection.</li>
-  <li>Evolution explains the diversity of life on Earth.</li>
-</ul>
-
-<p><b>Unity and Diversity</b></p>
-<ul>
-  <li>All living things share common features (like DNA).</li>
-  <li>But they are also diverse due to evolution and adaptation.</li>
-</ul>
-
-<p><b>Interdependence of Organisms</b></p>
-<ul>
-  <li>Living things depend on each other and their environment.</li>
-  <li>Example: plants produce oxygen that animals breathe.</li>
-</ul>
-
-<p><b>Biological Systems</b></p>
-<ul>
-  <li>Life is organized into systems—molecules → cells → tissues → organs → organisms → ecosystems.</li>
-  <li>Each level works together to support life.</li>
-</ul>
-
-
-  </figure>
+    <!-- </figure> -->
 
   </div>
-    
-    
-    
-    
 
-  <footer>
-      <nav>
-          <ul>
-              <li><a href="../index.html">Home Page</a></li>
-              <li><a href="topic1.html">Unifying Themes of Biology</a></li>
-              <li><a href="topic2.html">Theories on Evolution</a></li>
-              <li><a href="topic3.html">Macroevolution</a></li>
-              <li><a href="topic4.html">Microevolution</a></li>
-          </ul>
-      </nav>
-  </footer>
+
+
+
+
+  <!-- <footer>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home Page</a></li>
+        <li><a href="topic1.html">Unifying Themes of Biology</a></li>
+        <li><a href="topic2.html">Theories on Evolution</a></li>
+        <li><a href="topic3.html">Macroevolution</a></li>
+        <li><a href="topic4.html">Microevolution</a></li>
+      </ul>
+    </nav>
+  </footer> -->
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home Page</a></li>
+        <li class="nav-item"><a href="topic2.html" class="nav-link px-2 text-body-secondary">Theories on Evolution</a>
+        </li>
+        <li class="nav-item"><a href="topic3.html" class="nav-link px-2 text-body-secondary">Macroevolution</a></li>
+        <li class="nav-item"><a href="topic4.html" class="nav-link px-2 text-body-secondary">Microevolution</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy; 2026 ESCALONA, Maxxi; ESPOCIA, Mateo All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
