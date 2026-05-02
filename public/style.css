@@ -4,6 +4,28 @@ body {
     min-height: 100vh;  
 }
 
+.site-header {
+      background-color: #1f2933;
+      padding: 12px 24px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 50px;
+      height: auto;
+    }
+
+    .site-title {
+      color: white;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
 body {
   display: flex;
   flex-direction: column;
@@ -15,10 +37,12 @@ body {
   flex-shrink: 0;
 }
 
+/*
 header, footer {
     background-color: #c8c8c8;
     padding: 10px;
 }
+ */
 
 footer {
   padding: 1rem;
