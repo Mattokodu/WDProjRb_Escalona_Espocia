@@ -130,6 +130,12 @@ figure {
   font-weight: bold;
 }
 
+.game {
+  margin: 30px;
+  padding: 10px;
+  background-color:rgb(214, 194, 221)
+}
+
 /* #attribute:hover { */
     /* font-size: 50px; */
     /* transition: 3s; */

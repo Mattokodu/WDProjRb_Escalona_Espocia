@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Topic 4 - Microevolution</title>
+  <link rel="stylesheet" href="game.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Describe the content of this website">
@@ -13,17 +14,18 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <style>
     body {
-      background-color:rgb(231, 210, 236)
+      background-color:rgb(210, 185, 218)
     }
   </style>
 </head>
 <body>
+
   <header class="site-header">
       <div class="header-content">
-        <img src="assets/favicon.png" alt="Favicon" class="logo">
+        <img src="../assets/favicon.png" alt="Favicon" class="logo">
         <h1 class="site-title">Evolution Visualized</h1>
       </div>
-  </header>
+    </header>
 
   <div class="container">
     <figure>
@@ -108,8 +110,8 @@
     Each color represents a different allele.
 Random chance events can remove alleles from the population, reducing genetic diversity over time.
     <br><br>
-
-    <label>
+    <div class="game">
+      <label>
       Population Size:
         <select id="populationSize">
           <option value="10">Small (10)</option>
@@ -133,6 +135,7 @@ Random chance events can remove alleles from the population, reducing genetic di
 
       <button id="nextGen">Next Generation</button>
       <button id="reset">Reset</button>
+      <button id="save">Save</button>
 
       <p id="generation">Generation: 0</p>
 
@@ -140,6 +143,8 @@ Random chance events can remove alleles from the population, reducing genetic di
       <div class="population" id="population2"></div>
 
       <p id="frequencies"></p>
+    </div>
+    
 
       <script src="game.js"></script>
 
@@ -150,7 +155,7 @@ Random chance events can remove alleles from the population, reducing genetic di
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home Page</a></li>
-        <li class="nav-item"><a href="topic1.html" class="nav-link px-2 text-body-secondary">Unifying Themes of Biology</a>
+        <li class="nav-item"><a href="topic1.html" class="nav-link px-2 text-body-secondary">Themes on Biology</a>
         </li>
         <li class="nav-item"><a href="topic2.html" class="nav-link px-2 text-body-secondary">Theories on Evolution</a></li>
         <li class="nav-item"><a href="topic3.html" class="nav-link px-2 text-body-secondary">Macroevolution</a></li>
@@ -158,6 +163,5 @@ Random chance events can remove alleles from the population, reducing genetic di
       <p class="text-center text-body-secondary">&copy; 2026 ESCALONA, Maxxi; ESPOCIA, Mateo All rights reserved.</p>
     </footer>
   </div>
-
 </body>
 </html>
