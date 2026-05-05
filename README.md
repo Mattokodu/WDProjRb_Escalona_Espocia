@@ -1,7 +1,9 @@
 #  FINAL MODIFICATION PROPOSAL
 
+We will use CRUD by making the user suggest new topics.
+
 ## Updated Wireframes
 
-- ABC1
+Homepage:
 
-- ABC2
+![Homepage](assets/wireframe_1.png)
